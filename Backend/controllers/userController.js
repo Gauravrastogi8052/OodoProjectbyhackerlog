@@ -1,4 +1,4 @@
-const userModel = require("../Backend/models/userModel");
+const userModel = require("../models/userModel");
 
 // Get all products
 exports.getAllProducts = (req, res) => {

@@ -1,23 +1,26 @@
-const express = require('express');
+const express = require("express");
 const router = express.Router();
-const productController = require('../controllers/productController');
+const productController = require("../Backend/controllers/productController");
 
 // Create a new product
-router.post('/products', productController.createProduct);
+router.post("/products", productController.createProduct);
 
 // Get all products
-router.get('/products', productController.getAllProducts);
+router.get("/products", productController.getAllProducts);
 
 // Get product by ID
-router.get('/products/:id', productController.getProductById);
+router.get("/products/:id", productController.getProductById);
 
 // Update a product
-router.put('/products/:id', productController.updateProduct);
+router.put("/products/:id", productController.updateProduct);
 
 // Delete a product
-router.delete('/products/:id', productController.deleteProduct);
+router.delete("/products/:id", productController.deleteProduct);
 
 // Get products by category
-router.get('/products/category/:category', productController.getProductsByCategory);
+router.get(
+  "/products/category/:category",
+  productController.getProductsByCategory
+);
 
 module.exports = router;
