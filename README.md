@@ -140,7 +140,7 @@ CREATE DATABASE ecommerce;
 
 - Frontend: Vercel or Netlify.  
 - Backend: Render, Railway, or AWS EC2.  
-- Database: PlanetScale, AWS RDS, or Supabase.
+- Database: MySql
 
 ---
 
@@ -149,7 +149,6 @@ CREATE DATABASE ecommerce;
 - **Frontend:** React, Vite, Tailwind CSS, ShadCN/UI, Framer Motion, React Router  
 - **Backend:** Node.js, Express, JWT, bcrypt, Sequelize/mysql2  
 - **Database:** MySQL or PostgreSQL  
-- **Deployment:** Vercel, Netlify, Render, Railway, AWS
 
 ---
 
