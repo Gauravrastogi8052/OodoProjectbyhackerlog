@@ -183,6 +183,20 @@ const LandingPage = () => {
               >
                 Home
               </a>
+
+              <a
+                href="/login"
+                className="text-gray-600 font-bold hover:text-green-700 transition-colors"
+              >
+                Login
+              </a>
+
+              <a
+                href="/signup"
+                className="text-gray-600 hover:text-green-700 transition-colors font-bold"
+              >
+                SignUp
+              </a>
               <a
                 href="/products"
                 className="text-gray-600 hover:text-green-700 transition-colors"

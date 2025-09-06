@@ -43,7 +43,7 @@ const CartPage = () => {
 
   // Calculate cart totals
   const subtotal = cartItems.reduce(
-    (sum, item) => sum + item.price * item.quantity,
+    (sum, item) => sum + item.productPrice * item.quantity,
     0
   );
   const tax = subtotal * 0.08; // 8% tax
@@ -102,17 +102,17 @@ const CartPage = () => {
                       }`}
                     >
                       <img
-                        src={item.image}
+                        src={item.imageUrl}
                         alt={item.title}
                         className="w-20 h-20 object-cover rounded-lg shadow-md"
                       />
 
                       <div className="flex-1">
                         <h3 className="text-lg font-semibold text-green-800">
-                          {item.title}
+                          {item.productName}
                         </h3>
                         <p className="text-lg font-bold text-green-600 mt-1">
-                          ${item.price.toFixed(2)}
+                          {item.productPrice}
                         </p>
                       </div>
 
@@ -201,14 +201,14 @@ const CartPage = () => {
                 <div className="flex justify-between">
                   <span className="text-green-600">Subtotal</span>
                   <span className="font-medium text-green-700">
-                    ${subtotal.toFixed(2)}
+                    ₹{subtotal.toFixed(2)}
                   </span>
                 </div>
 
                 <div className="flex justify-between">
                   <span className="text-green-600">Estimated Tax</span>
                   <span className="font-medium text-green-700">
-                    ${tax.toFixed(2)}
+                    ₹{tax.toFixed(2)}
                   </span>
                 </div>
 
@@ -218,7 +218,7 @@ const CartPage = () => {
                     {shipping === 0 ? (
                       <span className="text-green-500">Free</span>
                     ) : (
-                      `$${shipping.toFixed(2)}`
+                      `₹${shipping.toFixed(2)}`
                     )}
                   </span>
                 </div>
@@ -228,7 +228,7 @@ const CartPage = () => {
                     Total
                   </span>
                   <span className="text-lg font-bold text-green-600">
-                    ${total.toFixed(2)}
+                    ₹{total.toFixed(2)}
                   </span>
                 </div>
 
