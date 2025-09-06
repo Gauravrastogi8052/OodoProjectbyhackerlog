@@ -1,12 +1,28 @@
-# React + Vite
+# Fullstack E-commerce Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-stack e-commerce project built with **React (Vite)** for the frontend, **Node.js + Express** for the backend, and **SQL (MySQL/PostgreSQL)** for the database.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Table of Contents
 
-## Expanding the ESLint configuration
+- [Project Setup](#project-setup)
+- [Frontend Setup](#frontend-setup-react--vite)
+- [Backend Setup](#backend-setup-nodejs--express)
+- [Database Setup](#database-setup-sql---mysql--postgresql)
+- [Authentication & Security](#authentication--security)
+- [API Development](#api-development)
+- [Deployment](#deployment)
+- [Technologies](#technologies)
+- [Contributing](#contributing)
+- [License](#license)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Project Setup
+
+1. Install **Node.js** and **npm** (latest version).  
+2. Create project folder and initialize Git repository:
+
+```bash
+git init
